@@ -1,0 +1,197 @@
+/* Header and Intro CSS */
+
+body{
+    margin: 0;
+}
+
+.header, .footer, .intro{
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.logo{
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.right-links{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li{
+    display: flex;
+    padding: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.first-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.second-container{
+    display: flex;
+    padding: 10px;
+}
+
+h1{
+   font-size: 48px;
+   color:#f9faf8;
+   margin: 10px;
+
+}
+
+.intro-text{
+    margin: 10px;
+    color: gray;
+    max-width: 320px;
+}
+
+.intro-button{
+    background-color: #3882f6;
+    color: white;
+    border-radius: 6px;
+    max-width: 150px;
+    margin: 10px;
+    border: none;
+    cursor:default;
+}
+/* Middle CSS */
+
+.middle{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bold;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.middle-container{
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+}
+
+.info{
+    max-width: 200px;
+}
+
+/* quote css */
+
+.quote{
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+   
+}
+
+h2{
+    color: #1f2937;
+    padding: 10px;
+    max-width: 300px;
+}
+
+h3{
+    padding: 10px;
+    text-align: right;
+}
+
+/* call to action section CSS */
+
+.call{
+    background-color: #3882f6;
+    margin: 30px;
+    border: 10px;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+
+.call-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.call-to-action{
+    background-color: #3882f6;
+    color: white;
+    border-radius: 6px;
+    
+}
+
+h4{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+/* footer CSS */
+
+.footer{
+   color: #e5e7eb;
+   padding: 10px;
+}
+
+/* flexbox proportions */
+
+.header{
+    flex-grow: 1;
+}
+
+.intro{
+    flex-grow: 3;
+}
+
+.middle{
+    flex-grow: 3;
+}
+
+.quote{
+    flex-grow: 3;
+}
+
+.call{
+    flex-grow: 2;
+}
+
+.footer{
+    flex-grow: 1;
+}
