@@ -1,0 +1,65 @@
+.navigation{
+    display: flex;
+    justify-content: center;
+}
+
+.choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 52px;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.image{
+    height: 200px;  /* Set your desired width */
+    width: 200px;
+}
+img{
+    height: 200px;  /* Set your desired width */
+    width: 200px;
+}
+
+p{
+    text-align: center;
+}
+
+.scoretracker{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.computerdisplay{
+    display: flex;
+    justify-content: center;
+}
+
+.yourdisplay{
+    display: flex;
+    justify-content: center;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+}
+
+.computerscore{
+    display: flex;
+    justify-content: center;
+}
+
+.yourscore{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    color: blue;
+}
+
+
