@@ -3,21 +3,61 @@
     justify-content: center;
 }
 
-.choices{
+:root {
+    --very-dark-blue: #0a0a23;
+    --white: #ffffff;
+    --yellow: #f1be32;
+    --golden-yellow: #feac32;
+  }
+
+.rules-container {
+    padding: 10px 0;
+    margin: auto;
+    border-radius: 15px;
+    border: 5px solid var(--yellow);
+    background-color: var(--white);
+    color: var(--very-dark-blue);
+  }
+
+  .rules-container ul {
+    list-style-type: none;
+  }
+  
+  .rules-container p {
+    margin: 10px 0;
+  }
+  
+  @media (min-width: 760px) {
+    .rules-container {
+      width: 60%;
+    }
+  }
+
+summary, ul{
+    text-align: center;
+    list-style-position: inside;
+}
+
+.score-container{
+    text-align: center;
+    padding-top: 10px;
+}
+
+h2{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+}
+
+.options-container{
+    display: flex;
     justify-content: space-around;
+    text-align: center;
     gap: 52px;
     flex-wrap: wrap;
     padding: 10px;
     margin: 10px;
-
 }
 
-.image{
-    height: 200px;  /* Set your desired width */
-    width: 200px;
-}
 img{
     height: 200px;  /* Set your desired width */
     width: 200px;
@@ -26,40 +66,3 @@ img{
 p{
     text-align: center;
 }
-
-.scoretracker{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.computerdisplay{
-    display: flex;
-    justify-content: center;
-}
-
-.yourdisplay{
-    display: flex;
-    justify-content: center;
-}
-
-.result{
-    display: flex;
-    justify-content: center;
-}
-
-.computerscore{
-    display: flex;
-    justify-content: center;
-}
-
-.yourscore{
-    display: flex;
-    justify-content: center;
-}
-
-h3{
-    color: blue;
-}
-
-

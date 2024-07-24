@@ -3,41 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors Game</title>
     <link rel="stylesheet" href="rpscss.css"/>
 </head>
 <body>
-    <div class="container">
-        <div class="navigation">
-            <h1>Rock, Paper, Scissors - Game!</h1>
-        </div>
-        <div class="choices">
-            <div class="image-container">
-                <img src="rock.jpeg" alt="rock"/>
-                <p>Rock</p>
+        <div class="container">
+            <div class="navigation">
+                <h1>Let's play Rock, Paper, Scissors - Game!</h1>
             </div>
-            <div class="image-container">
-                <img src="paper.avif" alt="paper"/>
-                <p>Paper</p>
-            </div>
-            <div class="image-container">
-                <img src="scissors.jpg" alt="scissors"/>
-                <p>Scissors</p>
-            </div>
-        </div>
-        <div class="scoretracker">
-            <div class="computerdisplay"><h3>Computer Chose: </h3></div>
-            <div class="yourdisplay"><h3>You chose: </h3></div>
-            <div class="result"><h3>It's a: !</h3></div>
-            <div class="computerscore"><h3>Computer Score:</h3></div>
-            <div class="yourscore"><h3>Your score: </h3></div>
-            
-        </div>
-    </div>
-   
-    
+            <div class="rules-container">
+                <summary><strong>Rules to the game</strong></summary>
 
-
-    <script src="rpsjava.js"></script>
-</body>
+                <p>You will be playing against the computer.</p>
+                <p>You can choose between Rock, Paper, and Scissors.</p>
+                <p>The first one to three points wins.</p>
+        
+                <p>Here are the rules to getting a point in the game:</p>
+                <ul>
+                    <li>Rock beats Scissors</li>
+                    <li>Scissors beats Paper</li>
+                    <li>Paper beats Rock</li>
+                </ul>
+                <p>
+                If the player and computer choose the same option (Ex. Paper and
+                Paper), then no one gets the point.
+                </p> 
+            </div>
+            <div class="score-container">
+                <strong
+                  >Player Score:  <span class="score" id="player-score"> 0</span></strong
+                >
+                <strong
+                  >Computer Score: 
+                  <span class="score" id="computer-score"> 0</span></strong
+                >
+              </div>
+              <h2>Choose an option:</h2>
+            <div class="options-container">
+                <div class="btn-container">
+                    <div class="image-container">
+                        <button id="rock-btn" class="btn"><img src="rock.jpeg" alt="Rock"/></button>
+                        <p>Rock</p>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <div class="image-container">
+                        <button id="paper-btn" class="btn"><img src="paper.avif" alt="Paper"/></button>
+                        <p>Paper</p>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <div class="image-container">
+                        <button id="scissors-btn" class="btn"> <img src="scissors.jpg" alt="Scissors"/></button>
+                        <p>Scissors</p>
+                    </div>
+                </div>
+            </div>
+            <div class="results-container">
+                <p id="results-msg"></p>
+                <p id="winner-msg"></p>
+                <button class="btn" id="reset-game-btn">Play again?</button>
+            </div>
+        </div>
+        <script src="rpsjava.js"></script>
+    </body>
 </html>
